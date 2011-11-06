@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/linearLayout1"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:background="@drawable/bg">
+	<LinearLayout android:id="@+id/linearLayout2"
+		android:layout_width="fill_parent" android:weightSum="1"
+		android:layout_height="48dp">
+		<RelativeLayout android:id="@+id/relativeLayout1"
+			android:background="@drawable/actionbar_bg" android:layout_width="wrap_content"
+			android:layout_height="48dp">
+			<ImageView android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true" android:layout_marginLeft="13dp"
+				android:layout_width="172dp" android:layout_height="26dp"
+				android:id="@+id/imageView2" android:src="@drawable/logo"></ImageView>
+			<Button android:layout_alignParentTop="true"
+				android:layout_alignParentRight="true" android:layout_width="48dp"
+				android:layout_height="48dp" android:background="@drawable/actionbar_bt3"
+				android:onClick="deleteMovie" android:id="@+id/btDelete"></Button>
+			<Button android:layout_height="48dp" android:background="@drawable/actionbar_bt2"
+				android:layout_width="48dp" android:id="@+id/btIdentify"
+				android:onClick="identifyMovie" android:layout_alignParentTop="true"
+				android:layout_toLeftOf="@+id/btDelete"></Button>
+		</RelativeLayout>
+	</LinearLayout>
+	<ScrollView android:layout_width="fill_parent" android:id="@+id/scrollView1"
+		android:layout_height="wrap_content" android:layout_below="@+id/linearLayout2"
+		android:layout_alignParentLeft="true" android:layout_above="@+id/linearLayout3" android:layout_marginBottom="5sp">
+		<LinearLayout android:layout_height="fill_parent"
+			android:orientation="vertical" android:layout_width="fill_parent"
+			android:id="@+id/linearLayout1">
+			<RelativeLayout android:padding="10dp"
+				android:layout_width="fill_parent" android:id="@+id/relativeLayout1"
+				android:layout_height="255dp">
+				<TextView android:id="@+id/textView1"
+					android:text="Harry Potter and the Deathly Hallows Part 1"
+					android:layout_toRightOf="@+id/imageView1" android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_width="wrap_content" android:layout_alignParentTop="true"
+					android:maxHeight="66dp" android:layout_height="wrap_content"></TextView>
+				<ImageView android:src="@drawable/noposter"
+					android:layout_width="146dp" android:layout_marginRight="10dp"
+					android:layout_alignParentTop="true" android:onClick="searchCover"
+					android:layout_alignParentLeft="true" android:id="@+id/imageView1"
+					android:layout_height="fill_parent"></ImageView>
+				<TextView android:id="@+id/textView9" android:text="116 minutes"
+					android:layout_toRightOf="@+id/imageView1" android:textAppearance="?android:attr/textAppearanceSmall"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_below="@+id/textView1"></TextView>
+				<TextView android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:id="@+id/textView4" android:layout_width="wrap_content"
+					android:layout_below="@+id/textView9" android:layout_toRightOf="@+id/imageView1"
+					android:layout_marginTop="5sp" android:text="@string/detailsGenre"
+					android:textStyle="bold"></TextView>
+				<TextView android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:id="@+id/textView5" android:text="TextView"
+					android:layout_width="wrap_content" android:layout_below="@+id/textView4"
+					android:layout_alignLeft="@+id/textView4"></TextView>
+				<TextView android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:id="@+id/textView7" android:layout_width="wrap_content"
+					android:layout_below="@+id/textView5" android:layout_alignLeft="@+id/textView5"
+					android:layout_marginTop="5sp" android:textStyle="bold"
+					android:text="@string/detailsReleaseDate"></TextView>
+				<TextView android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:text="TextView" android:layout_width="wrap_content"
+					android:layout_below="@+id/textView7" android:layout_alignLeft="@+id/textView7"
+					android:id="@+id/textView8"></TextView>
+				<TextView android:layout_height="wrap_content"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:id="@+id/textView11" android:layout_width="wrap_content"
+					android:layout_alignBottom="@+id/textView10"
+					android:layout_toRightOf="@+id/textView10" android:text="/10"
+					android:layout_marginBottom="2sp" android:layout_marginLeft="2sp"></TextView>
+				<ImageView android:src="@drawable/fav" android:id="@+id/imageView3"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_below="@+id/textView8" android:layout_alignLeft="@+id/textView8"
+					android:layout_marginTop="5sp"></ImageView>
+				<TextView android:id="@+id/textView10" android:text="0.0"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:layout_height="wrap_content" android:layout_width="wrap_content"
+					android:layout_alignBottom="@+id/imageView3"
+					android:layout_toRightOf="@+id/imageView3"
+					android:layout_marginLeft="5sp" android:layout_marginBottom="-2sp"></TextView>
+			</RelativeLayout>
+			<TextView android:id="@+id/textView6" android:layout_width="wrap_content"
+				android:text="Not everyone who drinks is a poet, some of us drink because we're not."
+				android:layout_marginRight="10dp" android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:layout_marginLeft="10dp"></TextView>
+			<TextView android:id="@+id/textView2" android:layout_width="fill_parent"
+				android:layout_marginRight="10sp" android:layout_height="fill_parent"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_marginLeft="10sp" android:text="Plot"
+				android:layout_marginTop="5sp"></TextView>
+			<TextView android:id="@+id/textView3" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall"
+				android:layout_marginLeft="10sp" android:layout_marginRight="10sp"
+				android:layout_marginTop="10sp" android:text="src"></TextView>
+		</LinearLayout>
+	</ScrollView>
+	<LinearLayout android:layout_height="wrap_content"
+		android:id="@+id/linearLayout3" android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true" android:layout_width="fill_parent" android:layout_margin="5sp">
+		<Button android:id="@+id/button1" android:layout_height="wrap_content"
+			android:text="@string/detailsPlayMovie" android:drawableLeft="@drawable/play"
+			android:onClick="playMovie" android:layout_weight="1"
+			android:layout_width="fill_parent"></Button>
+		<Button android:id="@+id/button2" android:layout_height="wrap_content"
+			android:text="@string/detailsWatchTrailer" android:drawableLeft="@drawable/youtube"
+			android:onClick="findTrailer" android:layout_weight="1"
+			android:layout_width="fill_parent"></Button>
+	</LinearLayout>
+
+</RelativeLayout>

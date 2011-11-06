@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_gravity="center"
+	android:id="@+id/relativeLayout1" android:background="@drawable/bg">
+	<LinearLayout android:id="@+id/linearLayout2"
+		android:layout_width="fill_parent" android:weightSum="1"
+		android:layout_height="48dp">
+		<RelativeLayout android:id="@+id/relativeLayout1"
+			android:background="@drawable/actionbar_bg" android:layout_width="wrap_content"
+			android:layout_height="48dp">
+			<ImageView android:id="@+id/imageView1" android:src="@drawable/logo"
+				android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+				android:layout_marginLeft="13dp" android:layout_width="172dp"
+				android:layout_height="26dp"></ImageView>
+			<TextView android:layout_width="wrap_content" android:id="@+id/textView1"
+				android:layout_height="wrap_content" android:layout_centerVertical="true"
+				android:layout_alignParentRight="true" android:textAppearance="?android:attr/textAppearanceSmall"
+				android:paddingRight="10dp" android:text="@string/setupStepTwo"></TextView>
+		</RelativeLayout>
+	</LinearLayout>
+	<TextView android:textAppearance="?android:attr/textAppearanceLarge"
+		android:layout_height="wrap_content" android:layout_below="@+id/linearLayout2"
+		android:layout_alignParentLeft="true" android:layout_width="fill_parent"
+		android:gravity="center" android:layout_margin="10dp"
+		android:textStyle="bold" android:text="@string/newuser2_donesearching"
+		android:id="@+id/txtNewUser2Title"></TextView>
+	<ProgressBar android:layout_height="wrap_content"
+		style="?android:attr/progressBarStyleHorizontal"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true" android:layout_width="fill_parent"
+		android:layout_margin="10dp" android:id="@+id/progressBar"></ProgressBar>
+	<TextView android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_height="wrap_content" android:layout_above="@+id/progressBar"
+		android:layout_alignLeft="@+id/progressBar" android:layout_width="fill_parent"
+		android:gravity="center" android:text="@string/setupWorking"
+		android:id="@+id/txtWorking"></TextView>
+	<TextView android:text="@string/newSetupMoviesFound"
+		android:layout_width="fill_parent" android:gravity="center"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_height="wrap_content" android:layout_below="@+id/txtNewUser2Title"
+		android:layout_alignParentLeft="true" android:layout_margin="10dp"
+		android:id="@+id/txtNewUser2Description"></TextView>
+	<Button android:id="@+id/button1" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true" android:onClick="goBackToMain" android:layout_width="fill_parent" android:text="@string/stringGoToLibrary" android:visibility="gone" android:layout_margin="10dp"></Button>
+</RelativeLayout>

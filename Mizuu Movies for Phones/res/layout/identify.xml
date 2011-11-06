@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout android:id="@+id/relativeLayout1"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:paddingLeft="5dp" android:paddingRight="5dp">
+	<EditText android:id="@+id/editText1" android:inputType="textPersonName"
+		android:layout_alignParentTop="true" android:layout_width="fill_parent"
+		android:hint="@string/searchQueryHint" android:layout_height="wrap_content" android:layout_marginRight="50dp">
+		<requestFocus></requestFocus>
+	</EditText>
+	<TextView android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:layout_below="@+id/editText1"
+		android:layout_alignLeft="@+id/editText1" android:id="@+id/txtResultsFound" android:gravity="center"
+		android:layout_alignRight="@+id/button1" android:padding="5dp"></TextView>
+	<LinearLayout android:layout_height="fill_parent"
+		android:orientation="vertical" android:id="@+id/linearLayout1"
+		android:layout_width="fill_parent" android:layout_alignParentBottom="true"
+		android:layout_alignLeft="@+id/editText1" android:layout_below="@+id/txtResultsFound">
+		<ListView android:id="@android:id/list" android:layout_width="fill_parent"
+			android:layout_height="fill_parent"></ListView>
+	</LinearLayout>
+	<ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_bt" android:layout_alignParentTop="true" android:layout_alignRight="@+id/linearLayout1" android:paddingLeft="15dp" android:paddingRight="15dp" android:id="@+id/button1" android:onClick="searchForMovies"></ImageButton>
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/LinearLayout1" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:animationCache="true" android:alwaysDrawnWithCache="true" android:background="@drawable/bg">
+	<LinearLayout android:id="@+id/linearLayout2"
+		android:layout_width="fill_parent" android:weightSum="1" android:layout_height="48dp">
+		<RelativeLayout android:id="@+id/relativeLayout1"
+			android:background="@drawable/actionbar_bg" android:layout_width="wrap_content"
+			android:layout_height="48dp">
+			<ImageView android:id="@+id/imageView1" android:src="@drawable/logo"
+				android:layout_alignParentLeft="true" android:layout_centerVertical="true"
+				android:layout_marginLeft="13dp" android:layout_width="172dp"
+				android:layout_height="26dp"></ImageView>
+			<Button android:id="@+id/button2" android:background="@drawable/actionbar_bt1"
+				android:layout_alignParentTop="true"
+				android:layout_alignParentRight="true" android:onClick="startUpdate"
+				android:layout_width="48dp" android:layout_height="48dp"></Button>
+			<Button android:id="@+id/button1" android:layout_alignParentTop="true" android:layout_toLeftOf="@+id/button2"
+				android:onClick="startSearch" android:layout_height="48dp"
+				android:layout_width="48dp" android:background="@drawable/actionbar_bt4"></Button>
+		</RelativeLayout>
+	</LinearLayout>
+	<RelativeLayout android:layout_height="wrap_content"
+		android:id="@+id/relativeLayout2" android:layout_width="fill_parent"
+		android:layout_margin="10dp">
+		<TextView android:text="@string/mainMyMoviesTitle"
+			android:textColor="#ccc" android:layout_height="wrap_content"
+			android:id="@+id/txtMainTitle" android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+			android:layout_width="wrap_content"></TextView>
+		<TextView android:text="@string/mainNumberofMovies"
+			android:layout_width="wrap_content" android:id="@+id/txtNumberofMovies"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_height="wrap_content" android:layout_centerVertical="true"
+			android:layout_alignParentRight="true"></TextView>
+	</RelativeLayout>
+	<GridView android:id="@+id/gridView1" android:layout_width="fill_parent"
+		android:numColumns="2" android:layout_height="fill_parent"
+		android:verticalSpacing="5sp"></GridView>
+</LinearLayout>

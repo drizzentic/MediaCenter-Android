@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout android:id="@+id/relativeLayout1"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android" android:padding="5dp">
+	<EditText android:id="@+id/editText1" android:inputType="textPersonName"
+		android:layout_alignParentTop="true" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:hint="@string/searchQueryHint"
+		android:drawableRight="@drawable/smallsearch">
+		<requestFocus></requestFocus>
+	</EditText>
+	<TextView android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:layout_below="@+id/editText1"
+		android:layout_alignLeft="@+id/editText1" android:layout_alignRight="@+id/editText1"
+		android:id="@+id/txtResultsFound"
+		android:gravity="center" android:padding="5dp"></TextView>
+	<LinearLayout android:id="@+id/linearLayout1"
+		android:layout_width="wrap_content" android:orientation="vertical"
+		android:layout_below="@+id/txtResultsFound" android:layout_alignLeft="@+id/editText1"
+		android:layout_alignRight="@+id/editText1" android:layout_height="fill_parent">
+		<ListView android:id="@android:id/list" android:layout_width="fill_parent"
+			android:layout_height="fill_parent"></ListView>
+	</LinearLayout>
+</RelativeLayout>

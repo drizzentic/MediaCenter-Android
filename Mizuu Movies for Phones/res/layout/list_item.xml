@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  android:layout_width="fill_parent"
-  android:layout_height="fill_parent" android:padding="10sp">
-    <TextView android:id="@+id/textView1" android:layout_height="wrap_content" android:layout_toRightOf="@+id/imageView1" android:layout_alignTop="@+id/imageView1" android:layout_width="fill_parent" android:textAppearance="?android:attr/textAppearanceLarge" android:text="Title"></TextView>
-    <TextView android:id="@+id/textView2" android:layout_height="wrap_content" android:layout_below="@+id/textView1" android:layout_alignLeft="@+id/textView1" android:layout_alignRight="@+id/textView1" android:layout_width="fill_parent" android:text="Description"></TextView>
-</RelativeLayout>

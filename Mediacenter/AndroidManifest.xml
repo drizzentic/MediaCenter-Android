@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.miz.mizuuphones" android:versionCode="2"
+	android:versionName="0.9.1">
+	<uses-sdk android:minSdkVersion="7" />
+
+	<!-- Application -->
+	<application android:icon="@drawable/menuicon"
+		android:label="@string/app_name">
+
+		<!-- Main activity -->
+		<activity android:name=".Main" android:label="@string/app_name"
+			android:theme="@android:style/Theme.Black.NoTitleBar">
+			<intent-filter>
+				<action android:name="android.intent.action.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<!-- Setup activity -->
+		<activity android:name=".Setup" android:label="@string/app_name"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+			<intent-filter>
+				<action android:name="android.intent.action.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<!-- Reset activity -->
+		<activity android:name=".ResetApp" android:label="@string/app_name"
+			android:theme="@android:style/Theme.Black.NoTitleBar">
+			<intent-filter>
+				<action android:name="com.miz.mizuuphones.ResetApp" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<!-- Preferences activity -->
+		<!--<activity android:name="Preferences" android:label="@string/settings_name"
+			android:theme="@android:style/Theme.Black.NoTitleBar"></activity>-->
+
+		<!-- Update activity -->
+		<activity android:name=".Update" android:label="@string/app_name"
+			android:screenOrientation="portrait" android:theme="@android:style/Theme.Black.NoTitleBar">
+			<intent-filter>
+				<action android:name="android.intent.action.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<!-- Movie Details activity -->
+		<activity android:name=".movieDetails" android:label="@string/app_name"
+			android:theme="@android:style/Theme.Black.NoTitleBar"
+			android:windowSoftInputMode="adjustPan">
+			<intent-filter>
+				<action android:name="android.intent.action.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<!-- Search activity -->
+		<activity android:name=".Search" android:label="@string/searchTitle"
+			android:theme="@android:style/Theme.Dialog">
+			<intent-filter>
+				<action android:name="android.intent.action.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<!-- Identify Movie activity -->
+		<activity android:name=".IdentifyMovie" android:label="@string/identifyMovieTitle"
+			android:theme="@android:style/Theme.Dialog">
+			<intent-filter>
+				<action android:name="android.intent.action.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<!-- Cover search activity -->
+		<activity android:name=".CoverSearch" android:label="@string/searchCovers"
+			android:theme="@android:style/Theme.Dialog">
+			<intent-filter>
+				<action android:name="android.intent.action.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<!-- About activity -->
+		<activity android:name=".About" android:label="@string/aboutMizuu"
+			android:theme="@android:style/Theme.Dialog">
+			<intent-filter>
+				<action android:name="android.intent.action.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<!-- Splash screen activity -->
+		<activity android:name=".splashScreen" android:label="@string/app_name"
+			android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+	</application>
+
+	<!-- Permissions -->
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+	<!-- Supported screens -->
+	<supports-screens android:smallScreens="true"
+		android:normalScreens="true" android:largeScreens="true" />
+
+</manifest>
